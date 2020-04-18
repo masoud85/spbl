@@ -33,7 +33,7 @@ public class SpringBootLearningApplication {
         SpringApplication.run(SpringBootLearningApplication.class, args);
     }
 
-    @Bean
+//    @Bean
     @Profile("dev")
     CommandLineRunner commandLineRunner(LinkRepository linkRepository, CommentRepository commentRepository) {
         return (args -> {
